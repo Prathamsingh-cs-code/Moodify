@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+Backend/node_modules/
+Frontend/node_modules/
+
+# Environment configurations and secrets
+.env
+Backend/.env
+Frontend/.env
+*.env
+
+# Build outputs
+Frontend/dist/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE and tool generated files
+.vscode/
+.idea/
+.system_generated/
+scratch/
