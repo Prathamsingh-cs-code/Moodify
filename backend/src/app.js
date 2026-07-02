@@ -11,6 +11,20 @@ app.use(cors({
     credentials: true
 }))
 
+const connectToDB = require("./config/database");
+
+app.use(async (req, res, next) => {
+    try {
+        await connectToDB();
+        next();
+    } catch (err) {
+        res.status(500).json({
+            message: "Database connection failed",
+            error: err.message
+        });
+    }
+});
+
 /**
  * Routes
  */
