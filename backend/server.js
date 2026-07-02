@@ -4,7 +4,9 @@ const app = require("./src/app")
 const connectToDB = require("./src/config/database");
 
 
-connectToDB();
+connectToDB().catch(err => {
+    console.error("Database connection failed at startup:", err.message);
+});
 
 if (process.env.NODE_ENV !== "production" || !process.env.VERCEL) {
     app.listen(3000, () => {
