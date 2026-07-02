@@ -1,16 +1,16 @@
 # Dependencies
 node_modules/
-Backend/node_modules/
-Frontend/node_modules/
+backend/node_modules/
+frontend/node_modules/
 
 # Environment configurations and secrets
 .env
-Backend/.env
-Frontend/.env
+backend/.env
+frontend/.env
 *.env
 
 # Build outputs
-Frontend/dist/
+frontend/dist/
 dist/
 
 # OS files

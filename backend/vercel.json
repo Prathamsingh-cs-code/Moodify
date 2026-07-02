@@ -1,4 +1,5 @@
 {
+  "name": "moodify-backend",
   "version": 2,
   "builds": [
     {
